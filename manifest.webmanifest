@@ -1,0 +1,18 @@
+{
+  "name": "Fio de Ouro",
+  "start_url": "./index-desktop.html",
+  "display": "standalone",
+
+  "icons": [
+    {
+      "src": "./imgs/img-1.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./imgs/img-2.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

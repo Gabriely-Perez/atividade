@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sistema de Ocorrências - Fio de Ouro</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="logo">Fio de Ouro</div>
+      <button id="menu-button" class="menu-button" type="button">☰</button>
+
+      <nav class="menu" id="menu">
+        <a href="#"> Dashboard </a>
+
+        <a href="#"> Máquinas </a>
+
+        <a href="#"> Ocorrências </a>
+
+        <a href="#"> Relatórios </a>
+      </nav>
+    </header>
+
+    <main class="conteudo">
+      <h1>Ocorrências de Manutenção</h1>
+
+      <section class="resumo">
+        <div class="resumo-card">
+          <h2>12</h2>
+
+          <p>Ocorrências abertas</p>
+        </div>
+
+        <div class="resumo-card critica">
+          <h2>4</h2>
+
+          <p>Prioridade crítica</p>
+        </div>
+
+        <div class="resumo-card">
+          <h2>5</h2>
+
+          <p>Em manutenção</p>
+        </div>
+
+        <div class="resumo-card">
+          <h2>18</h2>
+
+          <p>Resolvidas</p>
+        </div>
+      </section>
+
+      <section class="filtros">
+        <input
+          id="campo-busca"
+          type="text"
+          placeholder="Buscar por máquina ou descrição"
+        />
+
+        <select id="filtro-status">
+          <option>Todos</option>
+
+          <option>Aberta</option>
+
+          <option>Em análise</option>
+
+          <option>Em manutenção</option>
+
+          <option>Resolvida</option>
+        </select>
+
+        <select id="filtro-prioridade">
+          <option>Todas</option>
+
+          <option>Crítica</option>
+
+          <option>Alta</option>
+
+          <option>Média</option>
+
+          <option>Baixa</option>
+        </select>
+
+        <button>Buscar</button>
+      </section>
+
+      <section id="lista-ocorrencias" class="lista-ocorrencias"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
