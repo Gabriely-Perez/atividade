@@ -299,18 +299,23 @@ BOTÃO
 
 @media(max-width:600px){
   .cabecalho {
-    flex-direction: column;
-
     width: 100%;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 10px;
     padding: 12px;
+    flex-wrap: wrap;
      
+  }
+
+  .logo{
+    margin-right: 150px;
   }
   .menu{
     padding: 5px;
     gap: 10px;
     flex-direction: column;
+    flex-basis: 100%;
+    text-align: center;
     
   }
 
